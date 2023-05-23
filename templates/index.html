@@ -10,23 +10,25 @@
     <meta content="" name="keywords" />
 
     <!-- Favicons -->
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon_io/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon_io/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180"
+        href="{{url_for('static', filename='favicon_io/apple-touch-icon.png')}}">
+    <link rel="icon" type="image/png" sizes="32x32"
+        href="{{url_for('static', filename='favicon_io/favicon-32x32.png')}}">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon_io/favicon-16x16.png">
-    <link rel="manifest" href="assets/favicon_io/site.webmanifest">
+    <link rel="manifest" href="{{url_for('static', filename='favicon_io/site.webmanifest')}}">
 
 
     <!-- Vendor CSS Files -->
-    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
-    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
-    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
-    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
-    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet" />
-    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+    <link href="{{url_for('static', filename='vendor/aos/aos.css')}}" rel="stylesheet" />
+    <link href="{{url_for('static', filename='vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet" />
+    <link href="{{url_for('static', filename='vendor/bootstrap-icons/bootstrap-icons.css')}}" rel="stylesheet" />
+    <link href="{{url_for('static', filename='vendor/boxicons/css/boxicons.min.css')}}" rel="stylesheet" />
+    <link href="{{url_for('static', filename='vendor/glightbox/css/glightbox.min.css')}}" rel="stylesheet" />
+    <link href="{{url_for('static', filename='vendor/remixicon/remixicon.css')}}" rel="stylesheet" />
+    <link href="{{url_for('static', filename='vendor/swiper/swiper-bundle.min.css')}}" rel="stylesheet" />
 
     <!-- Template Main CSS File -->
-    <link href="assets/css/style.css" rel="stylesheet" />
+    <link href="{{url_for('static', filename='css/style.css')}}" rel="stylesheet" />
 
 </head>
 
@@ -35,7 +37,8 @@
     <header id="header" class="fixed-top">
         <div class="container d-flex align-items-center">
 
-            <a href="index.html" class="logo me-auto"><img src="assets/img/logo-tikfest.png" alt="" class="img-fluid"></a>
+            <a href="index.html" class="logo me-auto"><img src="{{url_for('static', filename='img/logo-tikfest.png')}}"
+                    alt="" class="img-fluid"></a>
 
 
             <nav id="navbar" class="navbar">
@@ -71,16 +74,19 @@
     <section id="hero" class="d-flex align-items-center">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
+                <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1"
+                    data-aos="fade-up" data-aos-delay="200">
                     <h1><span class="typewriter"> Festival Teknik Informatika & Komputer 2023 </span></h1>
                     <h2><span class="typewriter">Imaginary Olympics !</span></h2>
                     <div class="d-flex justify-content-center justify-content-lg-start">
                         <a href="#faq" class="btn-get-started scrollto">Punya pertanyaan ?</a>
-                        <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="glightbox btn-watch-video"><i class="bi bi-play-circle"></i><span>Video Profil</span></a>
+                        <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="glightbox btn-watch-video"><i
+                                class="bi bi-play-circle"></i><span>Video Profil</span></a>
                     </div>
                 </div>
                 <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
-                    <img src="assets/img/logo-header.png" class="img-fluid animated" alt="" />
+                    <img src="{{url_for('static', filename='img/logo-header.png')}}" class="img-fluid animated"
+                        alt="" />
                 </div>
             </div>
 
@@ -100,11 +106,11 @@
                     </h2>
 
                     <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-                        <img src="assets/img/clients/himatik.png" class="img-fluid" alt="" />
+                        <img src="{{url_for('static', filename='himatik.png')}}" class="img-fluid" alt="" />
                     </div>
 
                     <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-                        <img src="assets/img/clients/himatik.png" class="img-fluid" alt="" />
+                        <img src="{{url_for('static', filename='img/clients/himatik.png')}}" class="img-fluid" alt="" />
                     </div>
 
                     <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
@@ -137,14 +143,21 @@
                 <div class="row content">
                     <div class="col-lg-6">
                         <p style="text-align: justify">
-                            TIKFEST atau Teknik Informatika dan Komputer Festival adalah acara yang diselenggarakan oleh Departemen Teknik Informatika dan Komputer PNJ. <br /><br /> TIKFEST merupakan perubahan nama dari perhelatan kompetisi terbesar TIK,
-                            yaitu ITechno Cup yang sejak tahun 2012 telah diselenggarakan setiap tahunnya.<br /><br /> Acara ini berada dibawah naungan Departemen Kesehatan Mahasiswa dan Departemen Pendidikan dan Keilmuan HIMATIK Politeknik Negeri Jakarta.
+                            TIKFEST atau Teknik Informatika dan Komputer Festival adalah acara yang diselenggarakan oleh
+                            Departemen Teknik Informatika dan Komputer PNJ. <br /><br /> TIKFEST merupakan perubahan
+                            nama dari perhelatan kompetisi terbesar TIK,
+                            yaitu ITechno Cup yang sejak tahun 2012 telah diselenggarakan setiap tahunnya.<br /><br />
+                            Acara ini berada dibawah naungan Departemen Kesehatan Mahasiswa dan Departemen Pendidikan
+                            dan Keilmuan HIMATIK Politeknik Negeri Jakarta.
                         </p>
                     </div>
                     <div class="col-lg-6 pt-4 pt-lg-0">
                         <p>Selengkapanya Tentang Kami, Simak Video berikut, Yah.</p>
                         <div class="video-container">
-                            <iframe width="320" height="566" src="https://www.youtube.com/embed/QYg9mpWhDQM" title="introducing TIKFEST 2023" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            <iframe width="320" height="566" src="https://www.youtube.com/embed/QYg9mpWhDQM"
+                                title="introducing TIKFEST 2023" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
                         </div>
 
                         <a href="#" class="buy-btn">Get Started</a>
@@ -160,7 +173,8 @@
         <section id="why-us" class="why-us section-bg">
             <div class="container-fluid" data-aos="fade-up">
                 <div class="row">
-                    <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch order-2 order-lg-1">
+                    <div
+                        class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch order-2 order-lg-1">
                         <div class="content">
                             <h3>
                                 Ada Apa di TIKFEST 2023 ?
@@ -168,67 +182,70 @@
                             </h3>
                             <p>
                                 <strong>Berbeda dengan ITechno Cup yang hanya menyelenggarakan
-                    perlombaan ilmiah IT berskala nasional, TIKFEST 2023
-                    menyelenggarakan perhelatan kompetisi Akbar olahraga antar
-                    mahasiswa TIK PNJ sekaligus lomba IT nasional.
-                  </strong>
+                                    perlombaan ilmiah IT berskala nasional, TIKFEST 2023
+                                    menyelenggarakan perhelatan kompetisi Akbar olahraga antar
+                                    mahasiswa TIK PNJ sekaligus lomba IT nasional.
+                                </strong>
                             </p>
                         </div>
 
                         <div class="accordion-list">
                             <ul>
                                 <li class="listnya">
-                                    <a data-bs-toggle="collapse" class="collapse" data-bs-target="#accordion-list-1"><span>01</span> Event di TIKFEST23 <i class="bx bx-chevron-down icon-show"></i
-                      ><i class="bx bx-chevron-up icon-close"></i
-                    ></a>
+                                    <a data-bs-toggle="collapse" class="collapse"
+                                        data-bs-target="#accordion-list-1"><span>01</span> Event di TIKFEST23 <i
+                                            class="bx bx-chevron-down icon-show"></i><i
+                                            class="bx bx-chevron-up icon-close"></i></a>
                                     <div id="accordion-list-1" class="collapse show" data-bs-parent=".accordion-list">
                                         <p>
-                                            <ul type="disc">
-                                                <blockquote>
-                                                    <li>Kompetisi IT Berskala Nasional</li>
-                                                    <li>Kompetisi Olaharaga Antar Mahasiswa TIK</li>
-                                                    <li>Bazzar Makanan</li>
-                                                </blockquote>
-                                            </ul>
+                                        <ul type="disc">
+                                            <blockquote>
+                                                <li>Kompetisi IT Berskala Nasional</li>
+                                                <li>Kompetisi Olaharaga Antar Mahasiswa TIK</li>
+                                                <li>Bazzar Makanan</li>
+                                            </blockquote>
+                                        </ul>
                                         </p>
                                     </div>
                                 </li>
 
                                 <li class="listnya">
-                                    <a data-bs-toggle="collapse" data-bs-target="#accordion-list-2" class="collapsed"><span>02</span> Kompetisi Informatika Nasional <i class="bx bx-chevron-down icon-show"></i
-                      ><i class="bx bx-chevron-up icon-close"></i
-                    ></a>
+                                    <a data-bs-toggle="collapse" data-bs-target="#accordion-list-2"
+                                        class="collapsed"><span>02</span> Kompetisi Informatika Nasional <i
+                                            class="bx bx-chevron-down icon-show"></i><i
+                                            class="bx bx-chevron-up icon-close"></i></a>
                                     <div id="accordion-list-2" class="collapse" data-bs-parent=".accordion-list">
                                         <p>
-                                            <ul>
-                                                <li>Web Apps Development Competition</li>
-                                                <li>Lomba Karya Ilmiah : Cipta Inovasi Bisnis TIK </li>
-                                                <li>Lomba Poster Digital : (tema)</li>
-                                                </l>
-                                        </p>
+                                        <ul>
+                                            <li>Web Apps Development Competition</li>
+                                            <li>Lomba Karya Ilmiah : Cipta Inovasi Bisnis TIK </li>
+                                            <li>Lomba Poster Digital : (tema)</li>
+                                            </l>
+                                            </p>
                                     </div>
                                 </li>
 
                                 <li class="listnya">
-                                    <a data-bs-toggle="collapse" data-bs-target="#accordion-list-3" class="collapsed"><span>03</span> Kompetisi Olahraga Mahasiswa TIK
-                     <i class="bx bx-chevron-down icon-show"></i
-                      ><i class="bx bx-chevron-up icon-close"></i
-                    ></a>
+                                    <a data-bs-toggle="collapse" data-bs-target="#accordion-list-3"
+                                        class="collapsed"><span>03</span> Kompetisi Olahraga Mahasiswa TIK
+                                        <i class="bx bx-chevron-down icon-show"></i><i
+                                            class="bx bx-chevron-up icon-close"></i></a>
                                     <div id="accordion-list-3" class="collapse" data-bs-parent=".accordion-list">
                                         <p>
-                                            <ul>
-                                                <li>Futsal</li>
-                                                <li>BasketBall</li>
-                                                <li>Bulu Tangkis</li>
-                                            </ul>
+                                        <ul>
+                                            <li>Futsal</li>
+                                            <li>BasketBall</li>
+                                            <li>Bulu Tangkis</li>
+                                        </ul>
                                         </p>
                                     </div>
                                 </li>
-                                </ul>
+                            </ul>
                         </div>
                     </div>
 
-                    <div class="col-lg-5 align-items-stretch order-1 order-lg-2 img" style="background-image: url('assets/img/skills.jpg')" data-aos="zoom-in" data-aos-delay="150">
+                    <div class="col-lg-5 align-items-stretch order-1 order-lg-2 img"
+                        style="background-image: url('{{url_for}}')" data-aos="zoom-in" data-aos-delay="150">
                         &nbsp;
                     </div>
                 </div>
@@ -238,8 +255,10 @@
 
         <!-- Animasi icon -->
         <div class="animated-images">
-            <img src="assets/img/animasi-1.png" alt="Objek Gambar 1" style="left: 1%; animation-name: animate-up;">
-            <img src="assets/img/animasi-2.png" alt="Objek Gambar 2" style="right: 1%; animation-name: animate-up;">
+            <img src="{{url_for('static', filename='img/animasi-1.png')}}" alt="Objek Gambar 1"
+                style="left: 1%; animation-name: animate-up;">
+            <img src="{{url_for('static', filename='img/animasi-2.png')}}" alt="Objek Gambar 2"
+                style="right: 1%; animation-name: animate-up;">
         </div>
 
         <!-- END Animasi icon -->
@@ -260,15 +279,16 @@
                             <div class="icon"><i class="bx bxl-dribbble"></i></div>
                             <h4><a href="">Pendaftaran untuk seluruh kompetisi</a></h4>
                             <p>
-                                <ul>
-                                    <li>Pendaftaran dibuka : 11 mei 2023</li>
-                                    <li>Pendaftaran ditutup : 12 mei 2023 </li>
-                                </ul>
+                            <ul>
+                                <li>Pendaftaran dibuka : 11 mei 2023</li>
+                                <li>Pendaftaran ditutup : 12 mei 2023 </li>
+                            </ul>
                             </p>
                         </div>
                     </div>
 
-                    <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in"
+                        data-aos-delay="200">
                         <div class="icon-box">
                             <div class="icon"><i class="bx bx-file"></i></div>
                             <h4><a href="">Pesta Pembukaan</a></h4>
@@ -278,7 +298,8 @@
                         </div>
                     </div>
 
-                    <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in"
+                        data-aos-delay="300">
                         <div class="icon-box">
                             <div class="icon"><i class="bx bx-tachometer"></i></div>
                             <h4><a href="inner-page.html#IT">Lomba IT nasional <h6>klik info lebih lanjut</h6></a></h4>
@@ -288,7 +309,8 @@
                         </div>
                     </div>
 
-                    <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in"
+                        data-aos-delay="400">
                         <div class="icon-box">
                             <div class="icon"><i class="bx bx-layer"></i></div>
                             <h4> <small><a href=""> Kompetisi Olahraga Mahasiswa</a></small>
@@ -299,7 +321,8 @@
                         </div>
                     </div>
 
-                    <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in"
+                        data-aos-delay="300">
                         <div class="icon-box">
                             <div class="icon"><i class="bx bx-tachometer"></i></div>
                             <h4><a href="">Closing Ceremony</a></h4>
@@ -325,7 +348,8 @@
                 <div class="section-title">
                     <h2>Kabar TIKFEST 23</h2>
                     <p>
-                        Dapatkan Informasi Terbaru mengenai Acara Kami pada kolom konten dibawah, untuk informasi lebih lanjut kunjungi social media kami, yah.
+                        Dapatkan Informasi Terbaru mengenai Acara Kami pada kolom konten dibawah, untuk informasi lebih
+                        lanjut kunjungi social media kami, yah.
                     </p>
                 </div>
 
@@ -339,15 +363,17 @@
                 <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
                     <div class="col-lg-4 col-md-6 portfolio-item filter-app">
                         <div class="portfolio-img">
-                            <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="" />
+                            <img src="{{url_for('static', filename='img/portfolio/portfolio-1.jpg')}}" class="img-fluid"
+                                alt="" />
                         </div>
                         <div class="portfolio-info">
                             <h4>App 1</h4>
                             <p>App</p>
-                            <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 1"><i class="bx bx-plus"></i
-                ></a>
-                            <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i
-                ></a>
+                            <a href="{{url_for('static', filename='img/portfolio/portfolio-1.jpg')}}"
+                                data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 1"><i
+                                    class="bx bx-plus"></i></a>
+                            <a href="portfolio-details.html" class="details-link" title="More Details"><i
+                                    class="bx bx-link"></i></a>
                         </div>
                     </div>
 
@@ -478,7 +504,8 @@
                     <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="100">
                         <div class="member d-flex align-items-start">
                             <div class="pic">
-                                <img src="assets/img/team/po-puguh.png" class="img-fluid" alt="" />
+                                <img src="{{url_for('static', filename='img/team/po-puguh.png')}}" class="img-fluid"
+                                    alt="" />
                             </div>
                             <div class="member-info">
                                 <h4>Puguh Muamar Bramantyo</h4>
@@ -499,7 +526,8 @@
                     <div class="col-lg-6 mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="200">
                         <div class="member d-flex align-items-start">
                             <div class="pic">
-                                <img src="assets/img/team/vpo-yovan.png" class="img-fluid" alt="" />
+                                <img src="{{url_for('static', filename='img/team/vpo-yovan.png')}}" class="img-fluid"
+                                    alt="" />
                             </div>
                             <div class="member-info">
                                 <h4> Yovan Athailah</h4>
@@ -538,13 +566,14 @@
                     <ul>
                         <li data-aos="fade-up" data-aos-delay="100">
                             <i class="bx bx-help-circle icon-help"></i>
-                            <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-1">Dimana saya bisa mendaftarkan diri saya ?
-                  <i class="bx bx-chevron-down icon-show"></i
-                  ><i class="bx bx-chevron-up icon-close"></i
-                ></a>
+                            <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-1">Dimana saya bisa
+                                mendaftarkan diri saya ?
+                                <i class="bx bx-chevron-down icon-show"></i><i
+                                    class="bx bx-chevron-up icon-close"></i></a>
                             <div id="faq-list-1" class="collapse show" data-bs-parent=".faq-list">
                                 <p>
-                                    Anda bisa mendaftarkan diri anda melalui kolom navigasi bar Daftar. klik saja, anda akan diarahkan untuk mendaftar.
+                                    Anda bisa mendaftarkan diri anda melalui kolom navigasi bar Daftar. klik saja, anda
+                                    akan diarahkan untuk mendaftar.
                                 </p>
                             </div>
                         </li>
@@ -615,7 +644,8 @@
                 <div class="section-title">
                     <h2>Hubungi Kami</h2>
                     <p>
-                        Bila anda memiliki masukan, saran, maupun pertanyaan seputar TIKFEST 23. kami dengan senang hati membantu anda.
+                        Bila anda memiliki masukan, saran, maupun pertanyaan seputar TIKFEST 23. kami dengan senang hati
+                        membantu anda.
                     </p>
                 </div>
 
@@ -626,7 +656,8 @@
                                 <i class="bi bi-geo-alt"></i>
                                 <h4>Lokasi:</h4>
                                 <p>
-                                    Universitas Indonesia, Jl. Prof. DR. G.A. Siwabessy, Kukusan, Kecamatan Beji, Kota Depok, Jawa Barat 16425
+                                    Universitas Indonesia, Jl. Prof. DR. G.A. Siwabessy, Kukusan, Kecamatan Beji, Kota
+                                    Depok, Jawa Barat 16425
                                 </p>
                             </div>
 
@@ -642,7 +673,8 @@
                                 <p>088223963195</p>
                             </div>
 
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15860.719099997164!2d106.8236706!3d-6.3707762!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69ec1cabb59bdf%3A0x28b4f84e4677f329!2sPoliteknik%20Negeri%20Jakarta%20(PNJ)!5e0!3m2!1sid!2sid!4v1683986012467!5m2!1sid!2sid"
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15860.719099997164!2d106.8236706!3d-6.3707762!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69ec1cabb59bdf%3A0x28b4f84e4677f329!2sPoliteknik%20Negeri%20Jakarta%20(PNJ)!5e0!3m2!1sid!2sid!4v1683986012467!5m2!1sid!2sid"
                                 frameborder="0" style="border: 0; width: 100%; height: 290px" allowfullscreen></iframe>
                         </div>
                     </div>
@@ -692,7 +724,8 @@
                     <div class="col-lg-3 col-md-6 footer-contact">
                         <h3>TIKFEST 2023</h3>
                         <p>
-                            Departemen Teknik Informatika dan Komputer <br /> Politeknik Negeri Jakarta<br /> Universitas Indonesia, Depok <br /><br />
+                            Departemen Teknik Informatika dan Komputer <br /> Politeknik Negeri Jakarta<br />
+                            Universitas Indonesia, Depok <br /><br />
                         </p>
                     </div>
 
@@ -741,8 +774,10 @@
                             Untuk Informasi lebih Update kunjungi Social Media kami
                         </p>
                         <div class="social-links mt-3">
-                            <a href="https://twitter.com/ITechnoCup_PNJ" class="twitter"><i class="bx bxl-twitter"></i></a>
-                            <a href="https://www.instagram.com/itechnocup_pnj/" class="instagram"><i class="bx bxl-instagram"></i></a>
+                            <a href="https://twitter.com/ITechnoCup_PNJ" class="twitter"><i
+                                    class="bx bxl-twitter"></i></a>
+                            <a href="https://www.instagram.com/itechnocup_pnj/" class="instagram"><i
+                                    class="bx bxl-instagram"></i></a>
 
                         </div>
                     </div>
@@ -752,30 +787,27 @@
 
         <div class="container footer-bottom clearfix">
             <div class="copyright">
-                &copy; Developed by <strong><span>Tim IT TIKFEST 2023 </span></strong
-          >. All Rights Reserved
+                &copy; Developed by <strong><span>Tim IT TIKFEST 2023 </span></strong>. All Rights Reserved
+            </div>
         </div>
-      </div>
     </footer>
     <!-- End Footer -->
 
-    <div id="preloader"></div>
-    <a
-      href="#"
-      class="back-to-top d-flex align-items-center justify-content-center"
-      ><i class="bi bi-arrow-up-short"></i
-    ></a>
+    <!-- <div id="preloader"></div> -->
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
 
     <!-- Vendor JS Files -->
-    <script src="assets/vendor/aos/aos.js"></script>
-    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="{{url_for('static', filename='vendor/aos/aos.js')}}"></script>
+    <script src="{{url_for('static', filename='vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+    <script src="{{url_for('static', filename='vendor/glightbox/js/glightbox.min.js')}}"></script>
+    <script src="{{url_for('static', filename='vendor/isotope-layout/isotope.pkgd.min.js')}}"></script>
+    <script src="{{url_for('static', filename='vendor/swiper/swiper-bundle.min.js')}}"></script>
+    <script src="{{url_for('static', filename='vendor/waypoints/noframework.waypoints.js')}}"></script>
+    <script src="{{url_for('static', filename='vendor/php-email-form/validate.js')}}"></script>
 
     <!-- Template Main JS File -->
-    <script src="assets/js/main.js"></script>
-  </body>
+    <script src="{{url_for('static', filename='js/main.js')}}"></script>
+</body>
+
 </html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>TIKFEST PNJ</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180"
+        href="{{url_for('static', filename='favicon_io/apple-touch-icon.png')}}">
+    <link rel="icon" type="image/png" sizes="32x32"
+        href="{{url_for('static', filename='favicon_io/favicon-32x32.png')}}">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="{{url_for('static', filename='favicon_io/site.webmanifest')}}">
+
+
+    <!-- Vendor CSS Files -->
+    <link href="{{url_for('static', filename='vendor/aos/aos.css')}}" rel="stylesheet" />
+    <link href="{{url_for('static', filename='vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet" />
+    <link href="{{url_for('static', filename='vendor/bootstrap-icons/bootstrap-icons.css')}}" rel="stylesheet" />
+    <link href="{{url_for('static', filename='vendor/boxicons/css/boxicons.min.css')}}" rel="stylesheet" />
+    <link href="{{url_for('static', filename='vendor/glightbox/css/glightbox.min.css')}}" rel="stylesheet" />
+    <link href="{{url_for('static', filename='vendor/remixicon/remixicon.css')}}" rel="stylesheet" />
+    <link href="{{url_for('static', filename='vendor/swiper/swiper-bundle.min.css')}}" rel="stylesheet" />
+
+    <!-- Template Main CSS File -->
+    <link href="{{url_for('static', filename='css/style.css')}}" rel="stylesheet" />
+
+</head>
+
+<body>
+    {%block content%}
+    {%endblock%}
+
+    <!-- Vendor JS Files -->
+    <script src="{{url_for('static', filename='vendor/aos/aos.js')}}"></script>
+    <script src="{{url_for('static', filename='vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+    <script src="{{url_for('static', filename='vendor/glightbox/js/glightbox.min.js')}}"></script>
+    <script src="{{url_for('static', filename='vendor/isotope-layout/isotope.pkgd.min.js')}}"></script>
+    <script src="{{url_for('static', filename='vendor/swiper/swiper-bundle.min.js')}}"></script>
+    <script src="{{url_for('static', filename='vendor/waypoints/noframework.waypoints.js')}}"></script>
+    <script src="{{url_for('static', filename='vendor/php-email-form/validate.js')}}"></script>
+
+    <!-- Template Main JS File -->
+    <script src="{{url_for('static', filename='js/main.js')}}"></script>
+</body>
+
+</html>
